@@ -1,0 +1,13 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = solidPrincipleDemo
+build_property.ProjectDir = D:\Cloud\OneDrive - QualMinds Technologies Pvt Ltd\Personal\Books\Native Desktop Applications with .NET 7\BpB\2016\Chapter-9\Code\solidPrincipleDemo\solidPrincipleDemo\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 

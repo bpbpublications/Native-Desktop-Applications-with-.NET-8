@@ -1,0 +1,89 @@
+﻿@page "/order"
+
+@using BookSaleApp.Models;
+@using BookSaleApp.Services;
+@inject BookService bookService 
+
+
+<PageTitle>Order a books</PageTitle>
+<HeadContent>
+    <link href="css/booksalestyle.css" rel="stylesheet" />
+</HeadContent>
+
+<h1>Order a Books</h1>
+
+<span>Book Id:</span>
+<input type="text" width="100" @bind-value="bookid" />
+<button @onclick="AddBookItem_Click">Add</button>
+<br/>
+<span class="message">@message</span>
+
+<h2>List of Books in a Cart</h2>
+@foreach (var bookchartitem in bookCart)
+{
+    var book = books.First(x => x.Id == bookchartitem.Key);
+    <BookItem book="book" OnUpdateItemCount="OnUpdateItemCount"></BookItem>
+}
+@if (bookCart?.Count == 0)
+{
+    <text>
+        <p>No Items in the Cart</p>
+    </text>
+}
+<hr />
+<h2>Total Cart Value: $@total</h2>
+
+
+
+@code {
+    private List<Book> books = new List<Book>();
+    private Dictionary<int, int> bookCart = new Dictionary<int, int>();
+    private int bookid;
+    private string message = "";
+    private double total = 0;
+
+    protected override void OnInitialized()
+    {
+        books = bookService.GetBooks();
+    }
+
+    private void AddBookItem_Click()
+    {
+        if(bookid > 0)
+        {
+            if (books.Any(x => x.Id == bookid))
+            {
+                if (bookCart.TryAdd(bookid, 1))
+                {
+                    message = $"Book {bookid} added successfully!!";
+                    CalcoulateTotal();
+                }
+            }
+            else
+            {
+                message = $"Given Book with Id - {bookid}; not exist.";
+            }
+        }
+    }
+
+    private void OnUpdateItemCount(int bookid, int itemCount)
+    {
+        bookCart[bookid] = itemCount;
+
+        CalcoulateTotal();
+    }
+
+    private void CalcoulateTotal()
+    {
+        total = 0;
+        foreach (var bookchartitem in bookCart)
+        {
+            var book = books.First(x => x.Id == bookchartitem.Key);
+
+            total += (book.Price * bookchartitem.Value);
+        }
+
+        StateHasChanged();
+    }
+
+}

@@ -1,0 +1,31 @@
+﻿@using BookSaleApp.Models;
+
+<div class="divbookitem">
+    <h3>Title: @book.Title</h3>
+    <h4>Author: @book.Author</h4>
+    <h4>Price: $@book.Price</h4>
+    <input type="number" width="50" maxlength="2" @bind-value="@ItemCount" />
+</div>
+
+@code {
+    [Parameter]
+    public Book book { get; set; } = new Book();
+
+    [Parameter]
+    public Action<int, int> OnUpdateItemCount { get; set; }
+
+    private int itemcount = 1;
+    public int ItemCount
+    {
+        get => itemcount;
+        set
+        {
+            if (value > 0)
+            {
+                itemcount = value;
+                OnUpdateItemCount?.Invoke(book.Id, itemcount);
+            }
+        }
+    }
+
+}

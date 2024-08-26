@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <ItemGroup>
+    <ApplicationDefinition Update="App.xaml">
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="BindingFW\BindingFwWindow1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BindingFW\BindingFwWindow2.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BindingFW\BindingFwWindow3.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="BindingFW\BindingFwWindow4.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="ButtonDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="CheckboxDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="EmployeeForm.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paneltypes\CanvasDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paneltypes\DockPanelDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paneltypes\GridDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paneltypes\SlackPanelDemoWIndow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Paneltypes\WrapPanelDemoWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="PasswordControlWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBlockLongWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBlockSampleWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBoxMultiLineWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBoxSingleLineWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="TextBoxSpellCheckWindow.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UserControls\LabeledTextbox.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="Window1.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="BindingFW\BindingFwWindow1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BindingFW\BindingFwWindow2.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BindingFW\BindingFwWindow3.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="BindingFW\BindingFwWindow4.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="ButtonDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="CheckboxDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Dictionary1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="EmployeeForm.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="MainWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paneltypes\CanvasDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paneltypes\DockPanelDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paneltypes\GridDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paneltypes\SlackPanelDemoWIndow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Paneltypes\WrapPanelDemoWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="PasswordControlWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBlockLongWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBlockSampleWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBoxMultiLineWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBoxSingleLineWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="TextBoxSpellCheckWindow.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UserControls\LabeledTextbox.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Window1.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+  </ItemGroup>
+</Project>

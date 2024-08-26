@@ -1,0 +1,29 @@
+﻿@page "/"
+
+<h1>Hello, world!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+<h3>Application Information</h3>
+<p>@myAppInfo</p>
+<h3>Device Information</h3>
+<p>@myDevliceInfo</p>
+
+@code{
+
+    private string myDevliceInfo = "";
+    private string myAppInfo = "";
+
+    protected override void OnInitialized()
+    {
+        myAppInfo = $"App Name: {AppInfo.Name};";
+        myAppInfo += $"Orientatione: {DeviceDisplay.MainDisplayInfo.Orientation};";
+        myAppInfo += $"Screen Dimentions: {DeviceDisplay.MainDisplayInfo.Width} x {DeviceDisplay.MainDisplayInfo.Height}";
+
+        myDevliceInfo = $"Manufacturer: {DeviceInfo.Manufacturer};";
+        myDevliceInfo += $"Platform: {DeviceInfo.Platform};";
+        myDevliceInfo += $" Is on WIFI: {(Connectivity.ConnectionProfiles.Contains(ConnectionProfile.WiFi) ? "Yes" : "No")}";
+               
+    }
+}

@@ -1,0 +1,15 @@
+﻿<Window x:Class="WpfApp1.BindingFW.BindingFwWindow4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.BindingFW"
+        mc:Ignorable="d"
+        Title="BindingFwWindow4" Height="450" Width="800">
+    <StackPanel Margin="10">
+        <ListBox x:Name="lbFruits" Width="100" Height="100" Margin="10" SelectionChanged="lbFruits_SelectionChanged"></ListBox>
+        
+        <TextBox x:Name="txtFruit" Width="100"/>
+        <Button x:Name="btnUpdate" Click="btnUpdate_Click" Width="50" Content="Update"/>
+    </StackPanel>
+</Window>

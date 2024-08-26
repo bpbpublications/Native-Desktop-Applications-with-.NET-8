@@ -1,0 +1,11 @@
+﻿body {
+}
+
+span {
+    font-size: 20px;
+    font-family: Calibri;
+}
+
+.message{
+    background-color: cornflowerblue;
+}

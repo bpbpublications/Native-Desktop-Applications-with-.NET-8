@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.TextBlockLongWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        mc:Ignorable="d"
+        Title="TextBlockLongWindow" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <!--<TextBlock Margin="10">We are learning the basic WPF controls in detail with examples and key attributes which will be mostly used in WPF Applications</TextBlock>
+            <TextBlock Margin="10">We are learning the basic WPF controls in detail with examples and key attributes <LineBreak/>which will be mostly used in WPF Applications</TextBlock>-->
+            <TextBlock Margin="10" TextTrimming="WordEllipsis">
+			We are learning the basic WPF controls in detail with examples and key attributes which will be mostly used in WPF Applications
+            </TextBlock>
+            <TextBlock Margin="10" TextWrapping="Wrap">
+			We are learning the basic WPF controls in detail with examples and key attributes which will be mostly used in WPF Applications
+            </TextBlock>
+        </StackPanel>
+    </Grid>
+</Window>

@@ -1,0 +1,77 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Cloud\\OneDrive - QualMinds Technologies Pvt Ltd\\Personal\\Books\\Native Desktop Applications with .NET 7\\BpB\\2016\\Chapter-3\\Code\\CLIDemo\\CLIDemo.csproj": {}
+  },
+  "projects": {
+    "D:\\Cloud\\OneDrive - QualMinds Technologies Pvt Ltd\\Personal\\Books\\Native Desktop Applications with .NET 7\\BpB\\2016\\Chapter-3\\Code\\CLIDemo\\CLIDemo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Cloud\\OneDrive - QualMinds Technologies Pvt Ltd\\Personal\\Books\\Native Desktop Applications with .NET 7\\BpB\\2016\\Chapter-3\\Code\\CLIDemo\\CLIDemo.csproj",
+        "projectName": "CLIDemo",
+        "projectPath": "D:\\Cloud\\OneDrive - QualMinds Technologies Pvt Ltd\\Personal\\Books\\Native Desktop Applications with .NET 7\\BpB\\2016\\Chapter-3\\Code\\CLIDemo\\CLIDemo.csproj",
+        "packagesPath": "C:\\Users\\kskumar\\.nuget\\packages\\",
+        "outputPath": "D:\\Cloud\\OneDrive - QualMinds Technologies Pvt Ltd\\Personal\\Books\\Native Desktop Applications with .NET 7\\BpB\\2016\\Chapter-3\\Code\\CLIDemo\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\kskumar\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://nuget.teamvelocityportal.com/nuget": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "dapper": {
+              "target": "Package",
+              "version": "[2.0.143, )"
+            },
+            "nlog": {
+              "target": "Package",
+              "version": "[5.2.2, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.305\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
